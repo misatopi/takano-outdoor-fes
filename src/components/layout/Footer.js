@@ -26,11 +26,11 @@ export default async function Footer() {
     <div className="footer__member">
       <h2 className="footer__heading">鷹野アウトドアフェス実行委員会</h2>
       <ul className="footer__list">
-        <li className="footer__listitem"><a href="" target="_blank">フルーツカフェIchina</a></li>
-        <li className="footer__listitem"><a href="" target="_blank">ダイニングレストランQuest</a></li>
-        <li className="footer__listitem"><a href="" target="_blank">ごはん屋 I'm HOME</a></li>
-        <li className="footer__listitem"><a href="" target="_blank">ちはるさん</a></li>
-        <li className="footer__listitem"><a href="" target="_blank">地域ブログみさとぴ</a></li>
+        <li className="footer__listitem"><a href="https://www.instagram.com/ichigo_okanaga/" target="_blank">フルーツカフェIchina</a></li>
+        <li className="footer__listitem"><a href="https://misato-quest.jp/" target="_blank">ダイニングレストランQuest</a></li>
+        <li className="footer__listitem"><a href="https://www.instagram.com/gohan_imhome_1663/" target="_blank">ごはん屋 I'm HOME</a></li>
+        <li className="footer__listitem"><a href="https://kawailani.crayonsite.info/" target="_blank">Kawailani</a></li>
+        <li className="footer__listitem"><a href="https://www.misatopi.com" target="_blank">地域ブログみさとぴ</a></li>
       </ul>
     </div>
     <div className="footer__information">
