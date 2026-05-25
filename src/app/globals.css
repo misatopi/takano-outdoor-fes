@@ -820,6 +820,7 @@ ul.gallery__track--right{
 @media screen and (max-width: 768px) {
   body,html{
     overflow-x: hidden;
+    font-family: "Noto Sans JP", sans-serif;
   }
   .btn{display: block;text-align: center;height: 55px;line-height: 55px;border-radius: 30px;text-decoration: none;font-size: 16px;font-weight: bold;}
 
@@ -992,6 +993,7 @@ ul.gallery__track--right{
     border-radius: 6px;
     margin: 60px auto 50px;
     padding: 16px 20px;
+    position: relative;
   }
   .topics__heading{
     font-size: 18px;
