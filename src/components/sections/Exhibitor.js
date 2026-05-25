@@ -98,7 +98,7 @@ useEffect(() => {
         <div className="exhibitor__content">
           {mode === 'recruiting' && (
             <ul className="exhibitor__recruiting-list">
-              <li className="exhibitor__recruiting-item exhibitor__recruiting--workshop js-fadein">
+              <li className="exhibitor__recruiting-item exhibitor__recruiting--workshop">
                 <h3>出店に応募する</h3>
                 <p className="exhibitor__recruiting-info">
                   鷹野アウトドアフェスに出店希望の方はこちら<br />
@@ -110,7 +110,7 @@ useEffect(() => {
                 </a>
               </li>
 
-              <li className="exhibitor__recruiting-item exhibitor__recruiting--stage js-fadein">
+              <li className="exhibitor__recruiting-item exhibitor__recruiting--stage">
                 <h3>出演に応募する</h3>
                 <p className="exhibitor__recruiting-info">
                   鷹野アウトドアフェスに出演希望の方はこちら<br />
@@ -122,7 +122,7 @@ useEffect(() => {
                 </a>
               </li>
 
-              <li className="exhibitor__recruiting-item exhibitor__recruiting--sponsor js-fadein">
+              <li className="exhibitor__recruiting-item exhibitor__recruiting--sponsor">
                 <h3>協賛する</h3>
                 <p className="exhibitor__recruiting-info">
                   鷹野アウトドアフェスに協賛いただける企業様を募集しています
