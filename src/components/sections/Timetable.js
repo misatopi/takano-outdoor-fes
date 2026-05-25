@@ -8,13 +8,13 @@ export default function TimeTable({ items = [], mode = 'recruiting' }) {
         </h2>
 
         {mode === 'recruiting' && (
-          <div className="timetable__comingsoon js-fadein">
+          <div className="timetable__comingsoon">
             COMING SOON
           </div>
         )}
 
         {mode === 'open' && (
-          <ul className="timetable__list js-fadein">
+          <ul className="timetable__list">
             {items.map((item, index) => (
               <li key={index} className="timetable__list--item">
                 <span className="timetable__time">{item.time}</span>

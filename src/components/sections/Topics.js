@@ -1,6 +1,6 @@
 export default function Topics({ items = [] }) {
   return (
-    <section className="topics js-fadein">
+    <section className="topics">
       <div className="topics__inner common-inner">
 
         <h2 className="topics__heading">

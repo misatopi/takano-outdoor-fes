@@ -18,7 +18,7 @@ export default function Gallery({
       <div className="gallery__inner">
 
         {/* 上段（左流れ） */}
-        <ul className="gallery__track gallery__track--left js-fadein">
+        <ul className="gallery__track gallery__track--left">
           {loopLeft.map((img, index) => (
             <li key={`left-${index}`} className="gallery__item">
               <img src={`${img.url}?w=600`} />
@@ -27,7 +27,7 @@ export default function Gallery({
         </ul>
 
         {/* 下段（右流れ） */}
-        <ul className="gallery__track gallery__track--right js-fadein">
+        <ul className="gallery__track gallery__track--right">
           {loopRight.map((img, index) => (
             <li key={`right-${index}`} className="gallery__item">
               <img src={`${img.url}?w=600`} />

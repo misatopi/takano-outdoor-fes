@@ -32,17 +32,26 @@ useEffect(() => {
 
   const mm = gsap.matchMedia();
 
-  // PC幅のときだけGSAPを適用
   mm.add('(min-width: 769px)', () => {
+
+    if (!sectionRef.current) return;
+
     const trigger = ScrollTrigger.create({
       trigger: sectionRef.current,
       start: 'top top',
       end: '+=100%',
       pin: true,
       scrub: true,
+      invalidateOnRefresh: true,
     });
 
+    // 読み込み後に再計算
+    const refreshTimer = setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 500);
+
     return () => {
+      clearTimeout(refreshTimer);
       trigger.kill();
     };
   });
@@ -50,6 +59,7 @@ useEffect(() => {
   return () => {
     mm.revert();
   };
+
 }, []);
   return (
     <section className="exhibitor" ref={sectionRef}>
