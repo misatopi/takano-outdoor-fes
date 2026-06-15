@@ -79,6 +79,7 @@ export default async function Home() {
         items={exhibitorData.contents}
         year={year}
         mode={mode}
+        setting={setting}
       />
 
       <Access />

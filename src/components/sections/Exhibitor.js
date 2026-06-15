@@ -13,17 +13,13 @@ const categories = [
 ];
 
 
-export default function Exhibitor({ items = [], mode = 'open', year }) {
+export default function Exhibitor({ items = [], mode = 'open', year,setting }) {
 const [activeCategory, setActiveCategory] = useState('all');
 
 const filteredItems = useMemo(() => {
   if (activeCategory === 'all') return items;
   return items.filter((item) => item.category?.[0] === activeCategory);
 }, [items, activeCategory]);
-
-console.log('mode:', mode);
-console.log('items:', items);
-console.log('filteredItems:', filteredItems);
 
 const sectionRef = useRef(null);
 
@@ -104,7 +100,7 @@ useEffect(() => {
                   鷹野アウトドアフェスに出店希望の方はこちら<br />
                   （販売・フード・ワークショップ）
                 </p>
-                <p className="exhibitor__recruiting-time">2026/6/1〜2026/6/30</p>
+                <p className="exhibitor__recruiting-time">{setting.entry_start}〜{setting.entry_end}</p>
                 <a href="/document/exhibitor_guideline" className="btn exhibitor__btn exhibitor__btn--shop">
                   出店に応募する
                 </a>
@@ -116,7 +112,7 @@ useEffect(() => {
                   鷹野アウトドアフェスに出演希望の方はこちら<br />
                   （ステージ）
                 </p>
-                <p className="exhibitor__recruiting-time">2026/6/1〜2026/6/30</p>
+                <p className="exhibitor__recruiting-time">{setting.entry_start}〜{setting.entry_end}</p>
                 <a href="/document/performer_guideline" className="btn exhibitor__btn exhibitor__btn--stage">
                   出演に応募する
                 </a>
@@ -127,7 +123,7 @@ useEffect(() => {
                 <p className="exhibitor__recruiting-info">
                   鷹野アウトドアフェスに協賛いただける企業様を募集しています
                 </p>
-                <p className="exhibitor__recruiting-time">2026/6/1〜2026/6/30</p>
+                <p className="exhibitor__recruiting-time">{setting.entry_start}〜{setting.entry_end}</p>
                 <a href="/document/sponsor_guideline" className="btn exhibitor__btn exhibitor__btn--sponsor">
                   協賛する
                 </a>
