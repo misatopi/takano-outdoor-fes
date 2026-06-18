@@ -39,7 +39,6 @@ export default async function Footer() {
         <li className="footer__listitem"><a href="/document/exhibitor_guideline">出店者募集</a></li>
         <li className="footer__listitem"><a href="/document/performer_guideline">出演者募集</a></li>
         <li className="footer__listitem"><a href="/document/sponsor_guideline">スポンサー募集</a></li>
-        <!--li className="footer__listitem"><a href="/document/volunteer_guideline">当日ボランティア募集</a></li-->
         <li className="footer__listitem"><a href="/document/exhibitor_info">出店者の皆様へ</a></li>
       </ul>
     </div>
