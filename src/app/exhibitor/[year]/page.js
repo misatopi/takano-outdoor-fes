@@ -27,6 +27,7 @@ export default async function Page({ params }) {
     queries: {
       filters: `year[equals]${year}`,
       orders: 'order',
+      limit: 100,
     },
   });
 

@@ -54,6 +54,7 @@ export default async function Home() {
     queries: {
       filters: `year[equals]${year}`,
       orders: 'order',
+      limit: 100,
     },
   });
 
