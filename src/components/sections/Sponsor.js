@@ -5,7 +5,7 @@ export default function Sponsor({ items = [] }) {
         <h2 className="sponsor__heading en">SPECIAL THANKS</h2>
 
         <p className="sponsor__detail">
-          鷹野アウトドアフェス2025開催にあたり協賛、<br className="sp" />ご協力いただいた皆様です。<br />
+          鷹野アウトドアフェス2026開催にあたり協賛、<br className="sp" />ご協力いただいた皆様です。<br />
           心より感謝申し上げます。
         </p>
 
